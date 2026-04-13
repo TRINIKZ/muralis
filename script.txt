@@ -1,0 +1,65 @@
+http://localhost:8080/
+
+http://localhost:8080/h2-console/
+
+Generic H2 (Server)
+Generic H2 (Server)
+
+Driver Class: org.h2.Driver
+JDBC URL: jdbc:h2:mem:muralis
+User Name: Muralis
+Password: Muralis
+
+(Os dados aqui apresentados foram gerados de forma aleatória, com base nos validadores da própria aplicação, não correspondendo a informações reais nem pertencendo a qualquer pessoa).
+
+INSERT INTO cliente (nome, cpf, data_nascimento, endereco) VALUES
+('Carlos Almeida', '12375801024', DATE '1995-03-12', NULL),
+('Ana Pereira', '12327378281', DATE '2001-07-25', NULL),
+('Bruno Santos', '12380336601', DATE '1998-11-02', NULL),
+('Fernanda Costa', '12303254256', DATE '1993-06-18', NULL),
+('Lucas Ribeiro', '12330363788', DATE '2000-09-30', NULL),
+('Juliana Martins', '12346562726', DATE '1997-04-05', NULL),
+('Rafael Gomes', '12350781089', DATE '1992-12-22', NULL),
+('Camila Rocha', '12326533739', DATE '2003-01-15', NULL),
+('Thiago Alves', '12379114277', DATE '1996-08-09', NULL),
+('Patrícia Barros', '12314266595', DATE '1999-05-27', NULL),
+('Eduardo Nunes', '12381481079', DATE '1988-10-14', NULL),
+('Mariana Teixeira', '12394601710', DATE '2002-02-08', NULL),
+('Gustavo Carvalho', '12396062654', DATE '1994-07-19', NULL),
+('Larissa Batista', '12389262821', DATE '1991-11-11', NULL),
+('Daniel Freitas', '12367375984', DATE '1989-03-03', NULL),
+('Beatriz Mendes', '12347371673', DATE '2004-06-21', NULL),
+('Felipe Azevedo', '12353642756', DATE '1997-09-10', NULL),
+('Renata Correia', '12392959366', DATE '1993-01-28', NULL),
+('André Pires', '12396781006', DATE '1990-12-17', NULL),
+('Vanessa Farias', '12369185503', DATE '2001-05-04', NULL),
+('Leonardo Duarte', '12384978020', DATE '1996-02-14', NULL),
+('Aline Moura', '12381910379', DATE '1998-07-07', NULL),
+('Rodrigo Cardoso', '12306599190', DATE '1987-09-25', NULL),
+('Priscila Lopes', '12321780045', DATE '2003-03-19', NULL),
+('Marcelo Araújo', '12312135906', DATE '1992-10-01', NULL),
+('Carla Rezende', '12343804206', DATE '1999-06-12', NULL),
+('Diego Monteiro', '12347954342', DATE '1995-08-23', NULL),
+('Simone Pinto', '12326979745', DATE '2000-11-30', NULL),
+('Paulo Vieira', '12331920869', DATE '1986-04-18', NULL),
+('Tatiane Guedes', '12362220591', DATE '1997-01-06', NULL),
+('Vinícius Tavares', '12311414178', DATE '1994-09-13', NULL),
+('Elaine Borges', '12318920729', DATE '2002-12-02', NULL),
+('Fábio Coelho', '12391486588', DATE '1991-07-29', NULL),
+('Sabrina Neves', '12381444700', DATE '1998-05-11', NULL),
+('Ricardo Cunha', '12362227251', DATE '1989-02-20', NULL),
+('Débora Ramos', '12377340377', DATE '2003-08-16', NULL),
+('Alexandre Melo', '12317935110', DATE '1996-03-27', NULL),
+('Cláudia Peixoto', '12323578715', DATE '1990-10-08', NULL),
+('Roberto Sales', '12301092690', DATE '1985-06-05', NULL),
+('Kátia Nogueira', '12350505138', DATE '2001-09-22', NULL),
+('Henrique Dantas', '12324317451', DATE '1997-12-14', NULL),
+('Mônica Antunes', '12389265251', DATE '1993-04-09', NULL),
+('Leandro Xavier', '12377487394', DATE '1988-11-26', NULL),
+('Patrícia Lacerda', '12355257914', DATE '2004-01-03', NULL),
+('Caio Figueiredo', '12378041241', DATE '1999-07-17', NULL),
+('Julio César', '12389960944', DATE '1992-05-28', NULL),
+('Rosana Queiroz', '12385849933', DATE '1996-08-31', NULL),
+('Maurício Braga', '12383693839', DATE '1987-03-15', NULL),
+('Isabela Torres', '12318891524', DATE '2000-10-20', NULL),
+('Douglas Pinheiro', '12399436954', DATE '1995-02-11', NULL);
