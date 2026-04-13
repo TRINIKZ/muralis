@@ -357,6 +357,7 @@ Referencias oficiais e materiais uteis para os recursos usados no desafio:
 - O perfil padrao do projeto esta pronto para desenvolvimento local com H2.
 - O perfil `postgres` existe para execucao com banco real e pode ser ajustado conforme o ambiente.
 - O frontend esta desacoplado de frameworks JS e consome a API diretamente por `fetch`, o que deixa a solucao simples de executar e facil de inspecionar.
+- Foi utilizado o uso de IA (Codex) para o desenvolvimento dessa aplicação, o uso foi mediante a: otimizações de recursos, localizaçãao de erros, criação de elementos e para realizar parte da documentação. O sistema foi revisado inteiramente e foi criado a partir de um projeto passado realizado no meu último semestre da faculdade de ADS.
 
 ## 11. Ambiente de testes
 
