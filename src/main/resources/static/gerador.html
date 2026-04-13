@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de CPF de Teste</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo">PROJECT 01 - MURALIS</div>
+      <nav>
+        <a href="/index.html">Ínicio</a>
+        <a href="/clientes.html">Clientes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" id="gerador">
+      <h1>Gerador de CPF de teste</h1>
+      <p class="muted">
+        ATENÇÃO: Esta página gera números de CPF exclusivamente para testes na ferramenta de validação, 
+        respeitando o padrão nacional. Seu propósito é apenas criar dados que atendam aos critérios do validador, 
+        sem qualquer vínculo com bases de dados reais. Trata-se de uma ferramenta destinada a demonstrar a eficácia 
+        do sistema de validação. O uso de identidade falsa é crime.
+      </p>
+
+      <div id="mensagem"></div>
+
+      <div class="form-grid">
+        <div>
+          <label for="quantidade">Quantidade</label>
+          <input type="text" id="quantidade" value="10" inputmode="numeric" />
+        </div>
+
+        <div>
+          <label for="prefixo">Prefixo opcional (3 dígitos)</label>
+          <input type="text" id="prefixo" placeholder="Ex.: 123" maxlength="3" />
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button id="gerarBtn" type="button">Gerar lista</button>
+        <button id="copiarBtn" type="button" class="btn-secondary">Copiar lista</button>
+        <button id="limparBtn" type="button" class="btn-danger">Limpar</button>
+      </div>
+    </section>
+
+    <section class="card" id="lista">
+      <h2>Resultados</h2>
+      <p class="muted">Os valores abaixo têm formato de CPF, mas foram forçados para teste seguro.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>CPF gerado</th>
+          </tr>
+        </thead>
+        <tbody id="resultadoTabela">
+          <tr>
+            <td colspan="2" class="empty">Nenhum CPF gerado ainda.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="/js/musgrave-bg.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

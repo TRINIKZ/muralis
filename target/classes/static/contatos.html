@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contatos — Muralis</title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<canvas id="bg-canvas" aria-hidden="true"></canvas>
+	<header class="site-header">
+		<div class="inner">
+			<a class="logo" href="/index.html">PROJECT 01 - MURALIS</a>
+			<nav>
+				<a href="/index.html">Início</a>
+				<a href="/clientes.html">Clientes</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h1>Contatos</h1>
+		<div id="msg"></div>
+		<div id="conteudoPrincipal" hidden>
+			<div id="clienteCard" class="card"></div>
+			<div class="toolbar">
+				<button type="button" id="btnNovoContato">Novo contato</button>
+				<a class="btn btn-secondary" href="/clientes.html">Voltar à lista</a>
+			</div>
+			<div id="tabelaWrap"></div>
+		</div>
+	</main>
+
+	<div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+		<div class="modal">
+			<h2 id="modalTitulo">Contato</h2>
+			<form id="formContato">
+				<div class="form-grid">
+					<div>
+						<label for="tipo">Tipo</label>
+						<select id="tipo" name="tipo" required>
+							<option value="">Selecione…</option>
+							<option value="EMAIL">EMAIL</option>
+							<option value="TELEFONE">TELEFONE</option>
+							<option value="WHATSAPP">WHATSAPP</option>
+							<option value="OUTRO">OUTRO</option>
+						</select>
+					</div>
+					<div style="grid-column:1/-1">
+						<label for="valor">Valor</label>
+						<input type="text" id="valor" name="valor" required maxlength="200" />
+					</div>
+					<div style="grid-column:1/-1">
+						<label for="observacao">Observação</label>
+						<textarea id="observacao" name="observacao" maxlength="500"></textarea>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit">Salvar</button>
+					<button type="button" class="btn-secondary" id="btnFecharModal">Cancelar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="/js/musgrave-bg.js"></script>
+	<script src="/js/format.js"></script>
+	<script src="/js/api.js"></script>
+	<script src="/js/contatos.js"></script>
+</body>
+</html>
