@@ -46,27 +46,29 @@ body {
 }
 
 /* Conteúdo acima do canvas de fundo (Musgrave) */
-:root:has(.btn-danger:hover) {
+:root:has(#btnExcluirTodos:hover) {
 	--glass-panel-active: rgba(53, 53, 53, 0.32);
 	--glass-panel-strong-active: rgba(26, 35, 50, 0.78);
-	--button-text-opacity: 0.15;
-	--table-text-opacity: 0.2;
+	--text: #111111;
+	--muted: #111111;
+	--button-text-opacity: 1;
+	--table-text-opacity: 1;
 	--link-color: #111111;
 	--link-hover-color: #111111;
-	--link-shadow:
-		0 0 10px rgba(92, 18, 18, 0.65),
-		0 0 22px rgba(92, 18, 18, 0.38);
-	--link-hover-shadow:
-		0 0 12px rgba(92, 18, 18, 0.82),
-		0 0 28px rgba(92, 18, 18, 0.5);
+	--link-shadow: none;
+	--link-hover-shadow: none;
 	--heading-color: #111111;
-	--heading-shadow:
-		0 0 14px rgba(92, 18, 18, 0.72),
-		0 0 34px rgba(92, 18, 18, 0.42);
+	--heading-shadow: none;
 	--primary-btn: #111111;
 	--primary-btn-hover: #1f1f1f;
 	--primary-btn-glow: #111111;
 	--primary-btn-glow-strong: #3a3a3a;
+}
+
+:root:has(#btnExcluirTodos:hover) body *:not(#btnExcluirTodos) {
+	color: #111111 !important;
+	text-shadow: 0 0 6px rgba(224, 82, 82, 0.18) !important;
+	transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 header.site-header,
@@ -315,6 +317,32 @@ button[type="submit"]:hover {
 		background 0.2s ease,
 		box-shadow 0.3s ease;
 }
+
+#btnExcluirTodos {
+	background: #000;
+	color: #e05252;
+	border: 1px solid rgba(224, 82, 82, 0.65);
+}
+
+#btnExcluirTodos:hover {
+	background: #050505;
+	color: #ff6b6b;
+	box-shadow:
+		0 0 60px rgba(224, 82, 82, 0.55),
+		0 0 12px rgba(255, 107, 107, 0.7),
+		0 0 248px rgba(128, 0, 0, 0.35),
+		inset 0 0 18px rgba(224, 82, 82, 0.2);
+	animation: burnout-shake 0.18s linear infinite;
+}
+
+@keyframes burnout-shake {
+	0% { transform: translate(0, 0) rotate(0deg); }
+	20% { transform: translate(-1px, 1px) rotate(-1deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	60% { transform: translate(-1px, 0) rotate(0deg); }
+	80% { transform: translate(1px, 1px) rotate(1deg); }
+	100% { transform: translate(0, 0) rotate(0deg); }
+}
 	.btn-danger:hover {
 		background: var(--danger-hover);
 		color: #fff;
@@ -474,6 +502,20 @@ table tbody tr:last-child td:only-child {
 
 .modal h2 {
 	margin-top: 0;
+}
+
+.screen-fade {
+	position: fixed;
+	inset: 0;
+	background: #000;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 100;
+	transition: opacity 1.5s ease;
+}
+
+.screen-fade.is-active {
+	opacity: 1;
 }
 
 .empty {

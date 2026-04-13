@@ -96,6 +96,11 @@ public class ClienteService {
 		clienteRepository.deleteById(id);
 	}
 
+	@Transactional
+	public void excluirTodos() {
+		clienteRepository.deleteAll();
+	}
+
 	private ClienteResponse fromResumo(ClienteResumo r) {
 		return ClienteResponse.builder()
 				.id(r.id())

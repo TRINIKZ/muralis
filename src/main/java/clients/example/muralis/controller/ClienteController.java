@@ -63,6 +63,12 @@ public class ClienteController {
 		clienteService.excluir(id);
 	}
 
+	@DeleteMapping
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void excluirTodos() {
+		clienteService.excluirTodos();
+	}
+
 	@PostMapping("/{clienteId}/contatos")
 	@ResponseStatus(HttpStatus.CREATED)
 	public ContatoResponse criarContato(
