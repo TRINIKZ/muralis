@@ -192,8 +192,8 @@ Apos subir a aplicacao:
 Configuracao do console H2:
 
 - JDBC URL: `jdbc:h2:mem:muralis`
-- User Name: `sa`
-- Password: deixar em branco
+- User Name: `Muralis`
+- Password: `Muralis`
 
 ### 5.3. Executando com PostgreSQL
 
